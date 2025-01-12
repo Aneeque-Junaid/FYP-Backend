@@ -1,9 +1,8 @@
 const express = require('express')
-const { getImagesForSentence, addWord } = require('../controllers/wordController')
+const { getVideoForSentence} = require('../controllers/wordController')
 
 const router = express.Router()
 
-router.post('/add', addWord)
-router.post('/get-images', getImagesForSentence)
+router.post('/get-videos', getVideoForSentence)
 
 module.exports = router
